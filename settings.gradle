@@ -1,0 +1,6 @@
+rootProject.name = 'JavaCore_Task4_Gradle'
+include 'db'
+include 'api'
+include 'service'
+findProject(':db:service')?.name = 'service'
+
